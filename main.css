@@ -1,0 +1,471 @@
+@media screen and (min-width: 1100px){
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body,html {
+  padding: 0;
+  margin: 0;
+  height:100%;
+}
+
+ /*leftside*/
+  
+  .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-column-gap:0px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+/*slidedownpage*/
+.bg {
+    grid-column: 1 / 5;
+    grid-row: 1 /5;
+    background-color: #FCDBA7;
+    z-index: -1;
+}
+
+.topbar {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+/* dropdown */
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 60%;
+  width: 210px;
+  padding: 10px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  grid-column: 1;
+  grid-row: 1;
+  width:210px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.801);
+  min-width: 210px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3C658E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
+
+.big { 
+  display: none; 
+}
+
+.icon2 {
+    grid-column: 2;
+    grid-row: 1;
+    width:30%;
+    margin-left: 90%;
+    margin-top: 3%;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 1;
+    width: 25%;
+}
+
+.label {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  color:#3C658E;
+  font-weight: 800;
+  font-size: 30pt;
+  text-align: left;
+  margin-left: 16%;
+  margin-top: 2%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  grid-column: 1 / 3;
+  grid-row: 2 / 5;
+  margin-top: 70px;
+  margin-left: 10%;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 500px;
+	height: 500px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.me {
+  grid-column: 1 / 3;
+  grid-row: 2 / 5;
+  width: 500px;
+  margin-left: 10%;
+}
+
+.circle{
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
+  width: 350px;
+  margin-top:258px;
+  margin-left: 10%;
+}
+
+.portrait{
+  grid-column: 1 / 3;
+  grid-row: 2 / 5;
+  width: 500px;
+  margin-left: 10%;
+}
+
+.six {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  margin-top:150px;
+  color:#616972;
+  font-weight: 400;
+  font-size:16pt;
+  text-align: left;
+  margin-left: 35%;
+}
+
+.contact {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  margin-top:5%;
+}
+
+ul li {
+  display:inline;
+}
+
+.insta {
+  width: 40px;
+  fill:#3C658E;
+  margin-left: 35%; 
+  margin-bottom: 25px;
+}
+
+.insta:hover {
+  fill: #ffffff;
+}
+
+.linkedin {
+  width: 42px;
+  fill:#3C658E;
+  margin-top: 75px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+.linkedin:hover {
+  fill: #ffffff;
+}
+
+.twitter {
+  width: 42px;
+  fill:#3C658E;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+.twitter:hover {
+  fill: #ffffff;
+}
+
+}
+
+@media screen and (max-width: 1099px){
+
+  *{
+    margin: 0;
+    padding:0;
+  }
+  
+  body,html {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .wrapper {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 160px);
+      font-family: 'Nunito', sans-serif;
+  }
+
+  .bg {
+    grid-column: 1 / 5;
+    grid-row: 1 /5;
+    background-color: #FCDBA7;
+    z-index: -1;
+}
+  
+  /* page2 */
+  .topbar {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.801);
+  }
+
+  .label {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    color:#3C658E;
+    font-weight: 800;
+    font-size: 15pt;
+    text-align: left;
+    margin-left: 26%;
+    margin-top: 6%;
+  }
+  
+  .icon2 {
+    grid-column: 2;
+    grid-row: 1;
+    width:50px;
+    margin-left: 140px;
+    margin-top: 6px;
+  }
+  
+  .menu {
+    grid-column: 1;
+    grid-row: 1;
+    width: 20px;
+    
+  }
+  
+  .six {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  color:#728791;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 45px;
+  }
+  
+
+
+.contact {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  margin-top:15%;
+}
+
+
+ul li {
+  display:inline;
+}
+
+.insta {
+  /* grid-column: 3;
+  grid-row: 8 / 9; */
+  width: 20px;
+  fill:#3C658E;
+  margin-top: 0px;
+  margin-left:18%; 
+}
+
+.insta:hover {
+  fill: #ffffff;
+}
+
+.linkedin {
+  /* grid-column: 4;
+  grid-row: 8 / 9; */
+  width: 23px;
+  fill:#3C658E;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.linkedin:hover {
+  fill: #ffffff;
+}
+
+.twitter {
+  /* grid-column:4;
+  grid-row: 8 / 9; */
+  width: 23px;
+  fill:#3C658E;
+  margin-left: 23px;
+}
+.twitter:hover {
+  fill: #ffffff;
+}
+
+/* dropdown */
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 60%;
+  width:100%;
+  padding: 10px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.801);
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3C658E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+  margin-left:25%;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 230px;
+	height: 230px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.me {
+  grid-column: 1 / 5;
+  width: 180px;
+  margin-right: auto;
+  margin-top:138px;
+  margin-left: 10%;
+}
+
+.circle{
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
+  width: 131px;
+  margin-top:118px;
+  margin-left: 50%;
+}
+
+.portrait{
+  grid-column: 1 / 5;
+  width: 180px;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-top:138px;
+}
+}
