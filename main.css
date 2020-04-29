@@ -277,8 +277,8 @@ ul li {
     font-weight: 800;
     font-size: 15pt;
     text-align: left;
-    margin-left: 26%;
-    margin-top: 40px;
+    margin-left: 18%;
+    margin-top: 35px;
   }
   
   .icon2 {
@@ -286,7 +286,7 @@ ul li {
     grid-row: 1;
     width:50px;
     margin-left: 140px;
-    margin-top: 6px;
+    margin-top: 20px;
   }
   
   .menu {
@@ -458,7 +458,7 @@ ul li {
   grid-row: 1 / 5;
   width: 131px;
   margin-top:118px;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 .portrait{
